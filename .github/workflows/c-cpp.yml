@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: ./X-Camp/CS101/Midterm/TensDigit
+      run: ./dantheking-crypto/X-Camp/CS101/Midterm/TensDigit
     - name: make
       run: make
     - name: make check
