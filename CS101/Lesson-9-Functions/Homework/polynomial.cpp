@@ -1,3 +1,4 @@
+// Input an integer n,calculate 1+(1+2)+(1+2+3)+...+(1+2+3+...+n).
 #include <iostream>
 using namespace std;
 inline int gausssum(int n) {
