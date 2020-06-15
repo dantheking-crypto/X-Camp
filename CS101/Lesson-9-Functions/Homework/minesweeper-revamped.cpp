@@ -1,3 +1,17 @@
+/* Input
+
+the first line includes two integers n,m.  1<=n,m<=100
+
+The next n lines,each line input a string of length m.
+
+Only two charcter can be used:'*','?'. ? means there is no mine in this position,* means there is one mine in this position.
+
+ 
+
+Output
+the output includes n lines,each line contains m characters. Use '*' to represent the position with a mine, and use a number to represent the number of mines around this position.
+*/
+
 #include <iostream>
 using namespace std;
  
