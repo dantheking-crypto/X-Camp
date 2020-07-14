@@ -1,0 +1,2 @@
+language = "cpp"
+run = "g++ -o tiles CS200/Lesson-3.1-Iteration/Homework/tiles.cpp; ./tiles"
