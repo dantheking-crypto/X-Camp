@@ -1,11 +1,54 @@
 #!/bin/sh
-
-read name
-if [ -f CS200/"Lesson-3.1-Iteration"/Homework/$name.cpp ]; then
-  echo Success! Program starting...
+echo "Which course?"
+ls
+while [ true ]
+do
+read folder
+if [ -d $folder ]; then 
+  cd $folder
+  break
 else
-  echo File not found, exiting; exit;
+  echo Invalid course
 fi
-g++ -o $name.exe CS200/"Lesson-3.1-Iteration"/Homework/$name.cpp;
-echo Program started
-./$name.exe
+done
+echo "Which lecture?"
+ls
+while [ true ]
+do
+read class
+if [ -d $class ]; then 
+  cd $class
+  break
+else
+  echo Invalid lecture
+fi
+done
+echo Which category?
+ls
+while [ true ]
+do
+read category
+if [ -d $category ]; then 
+  cd $category
+  break
+else
+  echo Invalid category
+fi
+done
+echo "Which script? Do not include file extension (i.e. .cpp)"
+ls
+while [ true ]
+do
+read name
+if [ -f $name.cpp ]; then
+  echo Compiling script...
+  g++ -o $name.exe $name.cpp
+  echo Starting script...
+  echo Script started!
+  ./$name.exe
+  rm $name.exe
+  break;
+else
+  echo Invalid script
+fi
+done
