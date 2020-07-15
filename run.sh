@@ -44,7 +44,7 @@ if [ -f $name.cpp ]; then
   echo Compiling script...
   g++ -o $name.exe $name.cpp
   echo Starting script...
-  echo Script started!
+  echo "Script started!"
   ./$name.exe
   rm $name.exe
   break;
