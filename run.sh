@@ -47,7 +47,7 @@ if [ -f $name.cpp ]; then
   echo "Script started!"
   ./$name.exe
   rm $name.exe
-  break;
+  break
 else
   echo Invalid script
 fi
