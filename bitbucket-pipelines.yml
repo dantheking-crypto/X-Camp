@@ -8,3 +8,4 @@ pipelines:
     - step:
         script: # Modify the commands below to build your repository.
           - make
+          - cat output.txt
