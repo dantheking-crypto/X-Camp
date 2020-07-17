@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: make
+    - run: make Makefile
     - run: cat output.txt
     - run: make clean
