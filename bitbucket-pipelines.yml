@@ -12,5 +12,5 @@ pipelines:
           - g++ -o hello.exe CS200/"Lesson-3.1-Iteration"/Homework/lines.cpp
           - ./hello.exe
           - rm hello.exe
-          - make
+          - make run.sh
           - make test
