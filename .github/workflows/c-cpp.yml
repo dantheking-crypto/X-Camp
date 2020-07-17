@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: cat output.txt
+    - run: cat ~/output.txt
     - run: make clean
